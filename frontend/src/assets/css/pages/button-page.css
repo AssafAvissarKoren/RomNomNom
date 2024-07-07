@@ -1,0 +1,37 @@
+/* ButtonPage.css */
+
+/* Set basic styles for the body to remove any default margin and ensure full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Ensure the button is centered within the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.interactive-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+@keyframes explode {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); opacity: 0; }
+    100% { transform: scale(0); opacity: 0; display: none; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
